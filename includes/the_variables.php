@@ -77,8 +77,6 @@ $current_page = $_SERVER["PHP_SELF"];
 
 $var_time = date('Y-m-d H:i:s');
 
-$tbm_sort_direction = $_GET['tbm_sort_direction'];
-
 if (!isset($_GET['tbm_sort_direction'])) {
 	$tbm_sort_direction = $_GET['tbm_sort_direction'] = 'DESC';
 	
