@@ -1,0 +1,132 @@
+body,td,th,pre {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+}
+body {
+	margin: 5px;
+}
+a:link {
+	color: #6699CC;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #6699CC;
+}
+a:hover {
+	text-decoration: underline;
+	color: #0066CC;
+}
+a:active {
+	text-decoration: none;
+	color: #6699CC;
+}
+h1,h2,h3,h4,h5,h6 {
+	display:block;
+	margin:0px 0px 5px 0px;
+	padding:3px;
+	font-weight: bold;
+	border-top: 3px double #CCC;
+	border-right: 3px double #CCC;
+	border-left: 3px double #CCC;
+	text-align:left;
+}
+th {
+	margin:0px 0px 5px 0px;
+	padding:3px;
+	font-weight: bold;
+	border-top: 3px solid #999;
+	border-right: 3px solid #999;
+	border-left: 3px solid #999;
+}
+h1 {
+	font-size: 18px;
+	color: #999999;
+}
+h2 {
+	font-size: 16px;
+	color: #999999;
+}
+h3 {
+	font-size: 14px;
+	padding-left:15px;
+	color: #999999;
+	background:#EFFAE5;
+}
+h4 {
+	font-size: 12px;
+	margin:10px 0px 10px 3px;
+	color: #666;
+	border-top:none;
+	border-right:none;
+	border-left:3px double #666;
+}
+#left {
+	float:left;
+	width:302px;
+	height: 590px;
+	overflow:auto;
+	border-right:1px dashed #CCC;
+	padding: 0px 5px 5px 5px;
+	text-align:left;
+}
+#left_01 {
+}
+#left_02 {
+}
+#left_03 {
+}
+#right {
+	float:right;
+	width:477px;
+	height: 590px;
+	overflow:auto;
+	border-left:3px solid #F7F7F7;
+	padding:0px 5px 5px 5px;
+}
+#right_01 {
+}
+#right_02 {
+}
+form {
+	margin:0;
+	padding:0;
+}
+.but_small {
+	border: 1px solid #666;
+	padding: 2px;
+	cursor: pointer;
+	height:16px;
+	background:none;
+	vertical-align: top;
+}
+.box_end {
+	display:block;
+	height:5px;
+	overflow:hidden;
+	background:#EFFAE5;
+	border-right: 3px double #999;
+	border-bottom: 3px double #999;
+	border-left: 3px double #999;
+	margin:5px 0px 10px 0px;
+	clear:both;
+}
+td {
+	border: 1px solid #EAEAEA;
+	padding: 1px 2px 1px 2px;
+}
+.td_no_border {
+	border: none;
+	background: #FFF;
+}
+.warning_text {
+	color: #FF0000;
+}
+.nav_img {
+	cursor:pointer;
+}
+select {
+	border: 1px solid #E7E7E7;
+	font-size: 9px;
+}
