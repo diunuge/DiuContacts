@@ -60,10 +60,21 @@ if (!isset($_GET['pag_nr'])) {
 $_GET['pag_nr'] = 1;
 }
 
-if (!$_REQUEST['tcm_lang']) { $_REQUEST['tcm_lang'] = 'en'; }
+//if (!$_REQUEST['tcm_lang']) { $_REQUEST['tcm_lang'] = 'en'; }
+//no longer needed. only english version
+$_REQUEST['tcm_lang'] = 'en';
 
+if (isset($_POST['tbm_contain']) && $_POST['tbm_contain'] == 1) {
+	$tbm_like_start = '';
+}
+else {
+	$tbm_like_start = '%';
+}
+
+/*
 if ($_POST['tbm_contain'] == 1) { $tbm_like_start = '%'; }
-else { $tbm_like_start = ''; }
+else { $tbm_like_start = ''; } */
+
 $tbm_like_end = '%';
 
 $current_page = $_SERVER["PHP_SELF"];
