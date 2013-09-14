@@ -71,10 +71,6 @@ else {
 	$tbm_like_start = '%';
 }
 
-/*
-if ($_POST['tbm_contain'] == 1) { $tbm_like_start = '%'; }
-else { $tbm_like_start = ''; } */
-
 $tbm_like_end = '%';
 
 $current_page = $_SERVER["PHP_SELF"];
@@ -82,6 +78,14 @@ $current_page = $_SERVER["PHP_SELF"];
 $var_time = date('Y-m-d H:i:s');
 
 $tbm_sort_direction = $_GET['tbm_sort_direction'];
+
+if (!isset($_GET['tbm_sort_direction'])) {
+	$tbm_sort_direction = $_GET['tbm_sort_direction'] = 'DESC';
+	
+}
+else {
+	$tbm_sort_direction = $_GET['tbm_sort_direction'];
+}
 
 switch($tbm_sort_direction) {
 	case !isset($_GET['tbm_action']) && !isset($_POST['tbm_action']) && $_GET['tbm_sort_direction'] == 'ASC': $tbm_sort_direction = 'DESC'; break;
